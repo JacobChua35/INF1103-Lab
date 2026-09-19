@@ -19,6 +19,8 @@ def main():
             failedEntries += 1
             continue
         
+
+        
 def getValidInput():
     stock = input("Enter stock quantity: ")
     
@@ -34,3 +36,10 @@ def getValidInput():
         print("=============================")
         return None
     
+    
+def processDelivery(currentTotal,newValue):
+    return currentTotal + newValue
+    
+def calculateTax(amount):
+    amount *= 0.1
+    return amount  
