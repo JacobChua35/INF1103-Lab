@@ -19,6 +19,22 @@ def main():
             failedEntries += 1
             continue
         
+        quantity = result
+        inventory = processDelivery(inventory,quantity)
+        tax += calculateTax(quantity)
+        deliveriesProcessed += 1
+
+        if inventory > 500:
+            print()
+            print(f"Current Inventory: {inventory}. Exceeed 500 units! Halting entry process now.")
+            print()
+            break
+        elif inventory == 500:
+            print()
+            print(f"Current Inventory: {inventory}. Inventory at it\'s maximum capacity. Halting entry process now.")
+            print()
+            break
+
 
         
 def getValidInput():
