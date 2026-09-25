@@ -40,14 +40,23 @@ def main():
 def load_inventory():   # NEW
     try:
         with open("inventory.txt", "r") as file:
-            total = file.readlines()
+            total = int(file.readline())
+            line = file.readline().strip()
             history = []
-            for i in total:
-                i = i.strip()
-                history.append(int(i))
-                return total, history
+            if line != "":
+                for item in line.split(","):
+                    history.append(int(item))
+            return total, history
     except (FileNotFoundError, ValueError):
         return 0, []
+
+
+def save_inventory(total, history):   # NEW
+    with open("inventory.txt", "w") as file:
+        file.write(str(total) + "\n")
+        file.write(",".join(str(item) for item in history))
+    print("Inventory saved to inventory.txt")
+
 
 def getValidInput():
     stock = input("Enter stock quantity: ").strip()   # CHANGED
