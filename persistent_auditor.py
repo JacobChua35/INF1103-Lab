@@ -1,5 +1,5 @@
 def main():
-    inventory, history = load_inventory()   # NEW
+    inventory, history = load_inventory()   
     tax = 0
     failedEntries = 0
     deliveriesProcessed = 0
@@ -8,7 +8,7 @@ def main():
     print("=== Daily Delivery Auditor ===")
     print("==============================")
     print()
-    print(f"Starting Inventory: {inventory}")   # NEW
+    print(f"Starting Inventory: {inventory}")   
     print("Enter stock quantity for each delivery, or type 'quit' to finish.\n")
 
     while True:
@@ -37,7 +37,7 @@ def main():
     save_inventory(inventory, history)   # NEW
 
 
-def load_inventory():   # NEW
+def load_inventory():   
     try:
         with open("inventory.txt", "r") as file:
             total = file.readlines()
@@ -50,7 +50,7 @@ def load_inventory():   # NEW
         return 0, []
 
 
-def save_inventory(total, history):   # NEW
+def save_inventory(total, history):   
     with open("inventory.txt", "w") as file:
         file.write(str(total) + "\n")
         file.write(",".join(str(item) for item in history))
@@ -58,12 +58,12 @@ def save_inventory(total, history):   # NEW
 
 
 def getValidInput():
-    stock = input("Enter stock quantity: ").strip()   # CHANGED
+    stock = input("Enter stock quantity: ").strip()   
 
     if stock.lower() == "quit":
         return False
 
-    if stock.isdecimal():   # CHANGED
+    if stock.isdecimal():   
         return int(stock)
 
     print("=============================")
