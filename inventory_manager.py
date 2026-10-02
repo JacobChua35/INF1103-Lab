@@ -25,7 +25,6 @@ def save_inventory(inventory_list):
 
 inventory = load_inventory()   # replaces the hardcoded list
 
-
 def menu():
     print("=======================================")
     print("INVENTORY MANAGEMENT SYSTEM")
@@ -40,13 +39,11 @@ def menu():
     print("6. Exit")
     print("------------------")
 
-
 def displayAll():
     print("---------------------------------------------------------------------")
     for item in inventory:
         print(f"ID: {item['ID']} | Name: {item['Name']} | Price: ${item['Price']} | Stock: {item['Stock']}")
     print("---------------------------------------------------------------------")
-
 
 def add_product():
     print("Add New Product")
@@ -77,7 +74,46 @@ def add_product():
     print()
     print("Product added successfully.")
 
+def update_stock():
+    print("Update Stock")
+    product_id = input("Enter Product ID (format: P001): ").strip().upper()
+    if not re.fullmatch(r"P\d{3}", product_id):
+        print("Invalid Product ID format. Please use the format PXXX (e.g., P001).")
+        return
+    for item in inventory:
+        if item['ID'] == product_id:
+            
+            print("Product Found:")
+            print(f"Name: {item['Name']}")
+            print(f"Stock: {item['Stock']}")
+            
+            new_stock = input("Enter New Stock Quantity: ")
+            item['Stock'] = new_stock
+            print()
+            print("Stock updated successfully.")
+            return
+    print("Product not found.")
 
+def search_product():
+    print("Search Product")
+    product_id = input("Enter Product ID (format: P001): ").strip().upper()
+    if not re.fullmatch(r"P\d{3}", product_id):
+        print()
+        print("Invalid Product ID format. Please use the format PXXX (e.g., P001).")
+        return
+    for item in inventory:
+        if item['ID'] == product_id:
+            
+            print("Product Found:")
+            print("--------------------------")
+            print(f"ID: {item['ID']}")
+            print(f"Name: {item['Name']}")
+            print(f"Price: {item['Price']}")
+            print(f"Stock: {item['Stock']}")
+            print("--------------------------")
+            return
+    print()
+    print("Product not found.")
 
 while True:
     menu()
