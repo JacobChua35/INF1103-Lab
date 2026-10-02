@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "P001",
+        "Name": "Laptop",
+        "Price": "$1200.00",
+        "Stock": "15"
+    },
+    {
+        "ID": "P002",
+        "Name": "Mouse",
+        "Price": "$25.50",
+        "Stock": "40"
+    },
+    {
+        "ID": "P003",
+        "Name": "Keyboard",
+        "Price": "$45.00",
+        "Stock": "25"
+    },
+    {
+        "ID": "P004",
+        "Name": "Monitor",
+        "Price": "299.99",
+        "Stock": "10"
+    },
+    {
+        "ID": "P005",
+        "Name": "Intel CPU Chip",
+        "Price": "799.99",
+        "Stock": "10"
+    },
+    {
+        "ID": "P006",
+        "Name": "AMD",
+        "Price": "899.99",
+        "Stock": "7"
+    }
+]
