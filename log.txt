@@ -1,0 +1,48 @@
+commit dc19a2f1268fd0c648343ed18ac44285e59822ac
+Author: JacobChua35 <chuajiale.le@gmail.com>
+Date:   Fri Oct 2 16:23:03 2026 +0800
+
+    Load inventory
+
+commit 5bad924899140d4174ee7029387664fe412c5c22
+Merge: 16250bb df8e9df
+Author: JacobChua35 <chuajiale.le@gmail.com>
+Date:   Fri Oct 2 16:20:28 2026 +0800
+
+    Merge branch 'main' of https://github.com/JacobChua35/INF1103-Lab
+
+commit df8e9df7c432a2c6bdf75b625925ee4eca90ea43
+Author: JacobChua35 <61903601+JacobChua35@users.noreply.github.com>
+Date:   Sat Sep 26 04:35:07 2026 +0800
+
+    Update persistent_modular.py
+
+commit 571e0bd7ff1813b0cb94365b1f9b12fa4d26d976
+Author: JacobChua35 <61903601+JacobChua35@users.noreply.github.com>
+Date:   Sat Sep 26 04:33:44 2026 +0800
+
+    Add files via upload
+
+commit 16250bbc99c95068c9d8992f5e2743d6bcb34bd6
+Author: JacobChua35 <chuajiale.le@gmail.com>
+Date:   Sat Sep 26 04:03:10 2026 +0800
+
+    Fix merge conflicts
+
+commit c2374096bbc467bd43f97e0628e704b4fcd4c246
+Author: JacobChua35 <chuajiale.le@gmail.com>
+Date:   Sat Sep 26 03:56:56 2026 +0800
+
+    Initial Commit
+
+commit 7ee907d988ecd201e5abb49f27c54aedbb754786
+Author: JacobChua35 <chuajiale.le@gmail.com>
+Date:   Fri Sep 11 16:31:49 2026 +0800
+
+    added auditor
+
+commit f94a89c4514b65ed48b8cffd65da661a40872a91
+Author: JacobChua35 <61903601+JacobChua35@users.noreply.github.com>
+Date:   Fri Sep 11 16:25:05 2026 +0800
+
+    Initial commit
