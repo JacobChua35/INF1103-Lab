@@ -1,0 +1,17 @@
+[
+    {
+        "SupplierID": "S001",
+        "Name": "TechWorld Distributors",
+        "ContactEmail": "sales@techworld.example.com"
+    },
+    {
+        "SupplierID": "S002",
+        "Name": "ChipSource Trading",
+        "ContactEmail": "orders@chipsource.example.com"
+    },
+    {
+        "SupplierID": "S003",
+        "Name": "SoftKey Licensing",
+        "ContactEmail": "support@softkey.example.com"
+    }
+]

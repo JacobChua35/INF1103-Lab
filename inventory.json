@@ -1,44 +1,83 @@
 [
     {
+        "Type": "physical",
         "ID": "P001",
         "Name": "Laptop",
-        "Price": "$1200.00",
-        "Stock": "15"
+        "Price": 1200.0,
+        "Stock": 10,
+        "SupplierID": "S001",
+        "Weight": 2.0
     },
     {
+        "Type": "physical",
         "ID": "P002",
         "Name": "Mouse",
-        "Price": "$25.50",
-        "Stock": "40"
+        "Price": 25.5,
+        "Stock": 40,
+        "SupplierID": "S001",
+        "Weight": 0.1
     },
     {
+        "Type": "physical",
         "ID": "P003",
         "Name": "Keyboard",
-        "Price": "$45.00",
-        "Stock": "17"
+        "Price": 45.0,
+        "Stock": 17,
+        "SupplierID": "S001",
+        "Weight": 0.8
     },
     {
+        "Type": "physical",
         "ID": "P004",
         "Name": "Monitor",
-        "Price": "299.99",
-        "Stock": "10"
+        "Price": 299.99,
+        "Stock": 10,
+        "SupplierID": "S001",
+        "Weight": 5.5
     },
     {
+        "Type": "physical",
         "ID": "P005",
         "Name": "Intel CPU Chip",
-        "Price": "799.99",
-        "Stock": "10"
+        "Price": 799.99,
+        "Stock": 10,
+        "SupplierID": "S002",
+        "Weight": 0.1
     },
     {
+        "Type": "physical",
         "ID": "P006",
         "Name": "AMD",
-        "Price": "899.99",
-        "Stock": "7"
+        "Price": 899.99,
+        "Stock": 7,
+        "SupplierID": "S002",
+        "Weight": 0.1
     },
     {
+        "Type": "physical",
         "ID": "P007",
         "Name": "Handphone",
-        "Price": "$578.99",
-        "Stock": "11"
+        "Price": 578.99,
+        "Stock": 11,
+        "SupplierID": "S001",
+        "Weight": 0.2
+    },
+    {
+        "Type": "digital",
+        "ID": "P008",
+        "Name": "Windows 11 Pro License",
+        "Price": 199.99,
+        "Stock": 100,
+        "SupplierID": "S003",
+        "DownloadSize": 5400.0
+    },
+    {
+        "Type": "digital",
+        "ID": "P009",
+        "Name": "Antivirus Software",
+        "Price": 49.9,
+        "Stock": 250,
+        "SupplierID": "S003",
+        "DownloadSize": 850.0
     }
 ]
