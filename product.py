@@ -19,10 +19,18 @@ class Product(ABC):
       returns True/False. No subclass may raise or change this meaning.
     - get_fulfilment_info() always returns a str.
     - display_information() / display_details() print and return None.
+    - A product is never created with price <= 0 or stock < 0 (validated
+      here, in the class that owns the rule, so every subclass inherits it).
     """
 
     def __init__(self, product_id: str, name: str, price: float,
                  stock: int, supplier: Supplier) -> None:
+        # Validation (Lab 9 Section 4): check the data before storing it
+        if price <= 0:
+            raise ValueError("Price must be greater than zero.")
+        if stock < 0:
+            raise ValueError("Stock quantity cannot be negative.")
+
         # Private attributes (encapsulation)
         self.__product_id: str = product_id
         self.__name: str = name
